@@ -38,17 +38,17 @@
       <div class="qr-card-strip" aria-hidden="true"></div>
       <div class="qr-card-body">
         <div class="qr-frame">
-          <!-- Destination is configurable in script.js -->
-          <img id="qrImage" alt="QR code linking to the Autistem app" width="170" height="170" />
+          <img src="logo.jpeg" alt="Autistem" width="96" height="96" />
         </div>
         <div class="qr-text">
-          <h2>Scan to go to Autistem</h2>
-          <p>Open your phone's camera, point it at the code, and tap the link that appears.</p>
+          <span class="coming-badge"><i aria-hidden="true"></i>Coming soon</span>
+          <h2>The app is on its way.</h2>
+          <p>We're putting the finishing touches on Autistem. Check back soon.</p>
         </div>
       </div>
       <div class="qr-card-foot">
-        <span class="qr-avail">Available on iOS and Android.</span>
-        <a class="qr-help" href="#contact">Need help?</a>
+        <span class="qr-avail">Launching on iOS &amp; Android.</span>
+        <a class="qr-help" href="#contact">Get in touch</a>
       </div>
     </div>
   </div>
@@ -153,8 +153,31 @@
   </div>
 </section>
 
+<!-- ===== Demo request ===== -->
+<section class="contact" id="contact">
+  <div class="contact-inner">
+    <div class="contact-head">
+      <p class="eyebrow">Want a closer look?</p>
+      <h2>Request a demo.</h2>
+      <p class="contact-sub">Tell us a little about you and we'll be in touch to walk you through Autistem.</p>
+    </div>
+    <form class="demo-form" id="demoForm" novalidate>
+      <div class="field">
+        <label for="df-name">Name</label>
+        <input type="text" id="df-name" name="name" autocomplete="name" required />
+      </div>
+      <div class="field">
+        <label for="df-email">Email</label>
+        <input type="email" id="df-email" name="email" autocomplete="email" required />
+      </div>
+      <button type="submit" class="demo-submit">Request a demo</button>
+      <p class="form-note" id="df-note" role="status" aria-live="polite">Submitting opens your email app, pre-addressed to our team.</p>
+    </form>
+  </div>
+</section>
+
 <!-- ===== Footer ===== -->
-<footer class="site-footer" id="contact">
+<footer class="site-footer">
   <div class="footer-top">
     <div class="footer-brand">
       <a class="brand" href="#top">
@@ -178,7 +201,34 @@
   </div>
 </footer>
 
-<script src="qrcode.js"></script>
-<script src="script.js"></script>
+<script>
+  // Demo request form → opens the visitor's email client (no backend).
+  (function () {
+    var form = document.getElementById("demoForm");
+    if (!form) return;
+    var note = document.getElementById("df-note");
+    form.addEventListener("submit", function (e) {
+      e.preventDefault();
+      var name = document.getElementById("df-name").value.trim();
+      var email = document.getElementById("df-email").value.trim();
+      if (!name || !email) {
+        if (note) note.textContent = "Please add your name and email first.";
+        return;
+      }
+      var subject = "Demo request — " + name;
+      var body =
+        "Hi Autistem team,\n\nI'd like a demo of Autistem.\n\n" +
+        "Name: " + name + "\nEmail: " + email + "\n";
+      var href =
+        "mailto:raj@autistem.ai?subject=" +
+        encodeURIComponent(subject) +
+        "&body=" +
+        encodeURIComponent(body);
+      window.location.href = href;
+      if (note) note.textContent = "Opening your email app… if nothing happens, email us at raj@autistem.ai.";
+    });
+  })();
+</script>
+
 </body>
 </html>
