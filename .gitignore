@@ -1,0 +1,12 @@
+# macOS
+.DS_Store
+
+# Internal / non-website files
+*.pdf
+.claude/
+
+# Vercel
+.vercel
+
+# Dependencies (none currently, but just in case)
+node_modules/

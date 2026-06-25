@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Autistem AI — A quiet companion for your child's care journey</title>
+<meta name="description" content="Autistem AI is a mobile app for caregivers of autistic and neurodivergent children — care circle, daily logs, documents, appointments and medication, all in one calm place." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="styles.css" />
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cdefs%3E%3ClinearGradient id='w' x1='0' x2='1'%3E%3Cstop offset='0' stop-color='%2314b8a6'/%3E%3Cstop offset='1' stop-color='%233b82f6'/%3E%3C/linearGradient%3E%3C/defs%3E%3Cpath d='M5 10 C7 22 25 22 27 10' fill='none' stroke='url(%23w)' stroke-width='3.2' stroke-linecap='round'/%3E%3Ccircle cx='16' cy='10.5' r='2.8' fill='%23ff5f6e'/%3E%3C/svg%3E" />
+</head>
+<body>
+
+<!-- ===== Hero panel (gradient) ===== -->
+<section class="hero">
+  <header class="nav-wrap">
+    <nav class="nav" aria-label="Primary">
+      <a class="brand" href="#top" id="top">
+        <span class="brand-logo" aria-hidden="true">
+          <svg viewBox="0 0 32 32" width="26" height="26"><defs><linearGradient id="cw1" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#14b8a6"/><stop offset="1" stop-color="#3b82f6"/></linearGradient></defs><path d="M5 10 C7 22 25 22 27 10" fill="none" stroke="url(#cw1)" stroke-width="3.2" stroke-linecap="round"/><circle cx="16" cy="10.5" r="2.8" fill="#ff5f6e"/></svg>
+        </span>
+        <span class="brand-name">Autistem AI</span>
+      </a>
+      <div class="nav-links">
+        <a href="#features">Features</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <div class="hero-content">
+    <h1>Autistem AI on your phone.</h1>
+    <p class="hero-sub">A quiet companion for your child's care journey.</p>
+
+    <div class="qr-card">
+      <div class="qr-card-strip" aria-hidden="true"></div>
+      <div class="qr-card-body">
+        <div class="qr-frame">
+          <!-- Destination is configurable in script.js -->
+          <img id="qrImage" alt="QR code linking to the Autistem app" width="170" height="170" />
+        </div>
+        <div class="qr-text">
+          <h2>Scan to go to Autistem AI</h2>
+          <p>Open your phone's camera, point it at the code, and tap the link that appears.</p>
+        </div>
+      </div>
+      <div class="qr-card-foot">
+        <span class="qr-avail">Available on iOS and Android.</span>
+        <a class="qr-help" href="#contact">Need help?</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Features ===== -->
+<section class="features" id="features">
+  <div class="features-head">
+    <p class="eyebrow">Caring for an autistic or neurodivergent child involves a lot of silent work every day.</p>
+    <h2>Autistem AI is here to share the load.</h2>
+  </div>
+
+  <div class="feature-grid">
+
+    <!-- Care circle -->
+    <article class="feature">
+      <div class="mock mock-circle" aria-hidden="true">
+        <svg class="circle-lines" viewBox="0 0 300 170" preserveAspectRatio="none">
+          <line x1="150" y1="85" x2="150" y2="34"/>
+          <line x1="150" y1="85" x2="60"  y2="68"/>
+          <line x1="150" y1="85" x2="240" y2="68"/>
+          <line x1="150" y1="85" x2="70"  y2="132"/>
+          <line x1="150" y1="85" x2="230" y2="132"/>
+        </svg>
+        <span class="node-center">
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="#fff"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.4 3.6-8 8-8s8 3.6 8 8z"/></svg>
+        </span>
+        <span class="pill pill-top"><i style="background:#7c5cff"></i>Caregivers</span>
+        <span class="pill pill-left"><i style="background:#4cb8ff"></i>Therapists</span>
+        <span class="pill pill-right"><i style="background:#ffc02e"></i>Family</span>
+        <span class="pill pill-bl"><i style="background:#19c0a8"></i>Teachers</span>
+        <span class="pill pill-br"><i style="background:#ff6fae"></i>Doctors</span>
+      </div>
+      <h3>Your child's care team, in sync.</h3>
+      <p>Bring family members, therapists, doctors, teachers and other caregivers into your child's care circle.</p>
+    </article>
+
+    <!-- Capture -->
+    <article class="feature">
+      <div class="mock mock-note" aria-hidden="true">
+        <div class="note-tabs">
+          <span class="tab"><i style="background:#7c5cff"></i>Routine</span>
+          <span class="tab tab-active">Behaviour</span>
+          <span class="tab"><i style="background:#4cb8ff"></i>School</span>
+          <span class="tab"><i style="background:#ffc02e"></i>Diet</span>
+        </div>
+        <div class="note-box">
+          <span class="line w90"></span>
+          <span class="line w70"></span>
+          <span class="line w80"></span>
+          <div class="note-foot">
+            <span class="note-time">just now</span>
+            <span class="btn-saved">Saved</span>
+          </div>
+        </div>
+      </div>
+      <h3>Capture the day in seconds.</h3>
+      <p>Quick notes on routine, school, behaviour or diet, ready whenever you need to look back.</p>
+    </article>
+
+    <!-- Documents -->
+    <article class="feature">
+      <div class="mock mock-doc" aria-hidden="true">
+        <div class="doc-card">
+          <span class="doc-corner"></span>
+          <span class="line w80"></span>
+          <span class="line w60"></span>
+          <span class="line w70"></span>
+          <span class="line w50"></span>
+          <span class="doc-tag">MEDICAL</span>
+        </div>
+      </div>
+      <h3>Documents, ready when asked.</h3>
+      <p>Upload reports, bills, and prescriptions and find them in one tap. No more digging through folders.</p>
+    </article>
+
+    <!-- Appointments -->
+    <article class="feature">
+      <div class="mock mock-cal" aria-hidden="true">
+        <div class="cal-week">
+          <span><b>SU</b>3</span>
+          <span><b>MO</b>4</span>
+          <span><b>TU</b>5</span>
+          <span class="cal-active"><b>WE</b>6</span>
+          <span><b>TH</b>7</span>
+          <span><b>FR</b>8</span>
+          <span><b>SA</b>9</span>
+        </div>
+        <div class="cal-item">
+          <span class="cal-ico" style="background:#ffe3e3">💊</span>
+          <span class="cal-body"><b>Morning medication</b><small>8:00 AM · daily</small></span>
+        </div>
+        <div class="cal-item">
+          <span class="cal-ico" style="background:#e6e1ff">🗣️</span>
+          <span class="cal-body"><b>Speech therapy</b><small>10:30 AM</small></span>
+        </div>
+      </div>
+      <h3>Appointments &amp; medication, on time.</h3>
+      <p>Schedule events and routines, then see them waiting on your home screen when the day starts.</p>
+    </article>
+
+  </div>
+</section>
+
+<!-- ===== Footer ===== -->
+<footer class="site-footer" id="contact">
+  <div class="footer-top">
+    <div class="footer-brand">
+      <a class="brand" href="#top">
+        <span class="brand-logo" aria-hidden="true">
+          <svg viewBox="0 0 32 32" width="24" height="24"><defs><linearGradient id="cw2" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#14b8a6"/><stop offset="1" stop-color="#3b82f6"/></linearGradient></defs><path d="M5 10 C7 22 25 22 27 10" fill="none" stroke="url(#cw2)" stroke-width="3.2" stroke-linecap="round"/><circle cx="16" cy="10.5" r="2.8" fill="#ff5f6e"/></svg>
+        </span>
+        <span class="brand-name">Autistem AI</span>
+      </a>
+      <p class="footer-tag">A dedicated space to manage your child's care and support journey.</p>
+    </div>
+    <address class="footer-legal-info">
+      <strong>Autistem, LLC</strong>
+      <span>Federal ID #88-3570629</span>
+      <span>CA Entity #2022 5181 1216</span>
+      <a href="mailto:raj@autistem.ai">raj@autistem.ai</a>
+    </address>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2026 Autistem, LLC · All rights reserved.</span>
+    <span>Made with care.</span>
+  </div>
+</footer>
+
+<script src="qrcode.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
