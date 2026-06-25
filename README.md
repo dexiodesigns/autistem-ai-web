@@ -1,6 +1,6 @@
-# Autistem AI — Web
+# Autistem — Web
 
-Landing page for **Autistem AI**, a mobile app that helps caregivers manage the care of an autistic or neurodivergent child — care circle, daily logs, documents, and appointments & medication, all in one calm place.
+Landing page for **Autistem**, a mobile app that helps caregivers manage the care of an autistic or neurodivergent child — care circle, daily logs, documents, and appointments & medication, all in one calm place.
 
 The page invites visitors to scan a QR code to get the app on iOS or Android.
 
